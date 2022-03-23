@@ -47,8 +47,12 @@ public:
             if(record->left){st.push(record->left);}
 
         }
+
         return result;
+
+     }
 };
+        
 
 // int main()
 // {
