@@ -9,6 +9,19 @@ cc_library(
     "algsort.h",
   ],
   deps = [
-    "@com_github_glog_glog//:glog",
+    "@com_github_glog_glog//:glog"
+  ],
+)
+
+cc_library(
+  name = "complex",
+  srcs = [
+    "complex.cc",
+  ],
+  hdrs = [
+    "complex.h",
+  ],
+  deps = [
+    "@com_github_glog_glog//:glog"
   ],
 )

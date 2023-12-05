@@ -46,7 +46,7 @@ std::vector<int>& AlgSort::SelectSort(){
 }
 
 void AlgSort::QuickSort(std::vector<int>& array, int low, int high){
-    int size = _mInitArray.size();
+    int size = array.size();
     int i = low;
     int j = high;
     if(low < high){
@@ -78,23 +78,23 @@ void AlgSort::QuickSort(std::vector<int>& array, int low, int high){
     }
 }
 
+//Need to cancel this if run bazel test!!!!
+// int main(){
+//     std::vector<int> testarray = {2,4,5,1,9,7,10,7}; 
+//     std::vector<int> result;
+//     massive::AlgSort sorter(testarray);
+//     result = sorter.SelectSort();
 
-int main(){
-    std::vector<int> testarray = {2,4,5,1,9,7,10,7}; 
-    std::vector<int> result;
-    massive::AlgSort sorter(testarray);
-    result = sorter.SelectSort();
+//     massive::AlgSort sorter1(testarray);
+//     sorter1.QuickSort(testarray,0,7);
 
-    massive::AlgSort sorter1(testarray);
-    sorter1.QuickSort(testarray,0,7);
-
-    std::cout << "SelectSort result: ";
-    for (const auto& element : testarray) {
-        std::cout << element << " ";
-    }
-    std::cout << std::endl;
-    return 0;
-}
+//     std::cout << "SelectSort result: ";
+//     for (const auto& element : testarray) {
+//         std::cout << element << " ";
+//     }
+//     std::cout << std::endl;
+//     return 0;
+// }
 
 
 
